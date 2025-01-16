@@ -1,0 +1,238 @@
+{
+	"command": {
+		"group": "Configuración (TTS)",
+		"type": "string",
+		"label": "Comando",
+		"value": "!tts"
+	},
+	"useCmd": {
+		"group": "Configuración (TTS)",
+		"type": "checkbox",
+		"label": "Usar comando",
+		"value": true
+	},
+	"reward": {
+		"group": "Configuración (TTS)",
+		"type": "string",
+		"label": "Recompensa",
+		"value": ""
+	},
+	"useReward": {
+		"group": "Configuración (TTS)",
+		"type": "checkbox",
+		"label": "Usar recompensa (Personalizada)"
+	},
+	"useDefault": {
+		"group": "Configuración (TTS)",
+		"type": "checkbox",
+		"label": "Usar recompensa (Dest. mensaje)"
+	},
+	"minBits": {
+		"type": "number",
+		"label": "Bits mínimos (para el tts)",
+        "step": 1,
+        "value": 5,
+    	"min": 0,
+      	"group": "Configuración (TTS)"
+    },
+	"enabledBits": {
+		"type": "checkbox",
+		"label": "Usar bits",
+      	"group": "Configuración (TTS)"
+	},
+    "delayBits": {
+		"type": "number",
+		"label": "Tiempo de espera (de la alerta)",
+        "value": 2.5,
+    	"min": 0,
+      	"group": "Configuración (TTS)"
+	},
+	"pre": {
+		"group": "Configuración (TTS)",
+		"type": "string",
+		"label": "Mensaje (antes del tts)",
+		"value": ""
+    },
+    "isUser": {
+      "group": "Configuración (TTS)",
+      "type": "checkbox",
+      "label": "Mencionar usuario (antes del tts)"
+    },
+    "isGuion": {
+      "group": "Configuración (TTS)",
+      "type": "checkbox",
+      "label": "Cambiar _ por espacios"
+    },
+    "subscriber": {
+      "group": "Permisos",
+      "type": "checkbox",
+      "label": "Subs"
+    },
+    "vip": {
+      "group": "Permisos",
+      "type": "checkbox",
+      "label": "Vips"
+    },
+    "moderator": {
+      "group": "Permisos",
+      "type": "checkbox",
+      "label": "Mods"
+    },
+    "all": {
+      "group": "Permisos",
+      "type": "checkbox",
+      "label": "Todos",
+      "value": true
+    },
+    "listUser": {
+      "group": "Permisos",
+      "type": "string",
+      "label": "Usuarios confiables (separados por ,)",
+      "value": ""
+    },
+    "listBans": {
+      "group": "Permisos",
+      "type": "string",
+      "label": "Palabras baneadas (separados por ,)",
+      "value": ""
+    },
+	"voice": {
+		"group": "Configuración (TTS)",
+		"type": "dropdown",
+		"label": "Selecciona una voz:",
+		"value": "G-es-mx",
+		"options": {
+			"G-es-mx": "Google MX",
+			"G-es-es": "Google ES",
+            "tk-es_002": "Tiktok ES Male",
+            "tk-es_mx_002": "Tiktok MX Male",
+            "tk-es_male_m3": "Tiktok MX Male 2",
+            "tk-es_female_f6": "Tiktok MX Female",
+            "tk-es_female_fp1": "Tiktok MX Female 2",
+            "tk-es_mx_female_supermom": "Tiktok MX Female 3",
+            "tk-en_us_001": "Tiktok US Female",
+            "tk-en_us_006": "Tiktok US Male 1",
+            "tk-en_us_007": "Tiktok US Male 2",
+            "tk-en_us_009": "Tiktok US Male 3",
+            "tk-en_us_010": "Tiktok US Male 4",
+            "tk-en_uk_001": "Tiktok UK Male 1",
+            "tk-en_uk_003": "Tiktok UK Male 2",
+            "tk-en_au_001": "Tiktok AU Female",
+            "tk-en_au_002": "Tiktok AU Male",
+            "tk-fr_001": "Tiktok FR Male 1",
+            "tk-fr_002": "Tiktok FR Male 2",
+            "tk-de_001": "Tiktok DE Female",
+            "tk-de_002": "Tiktok DE Male",
+            "tk-br_003": "Tiktok BR Female 2",
+            "tk-br_004": "Tiktok BR Female 3",
+            "tk-br_005": "Tiktok BR Male",
+            "tk-id_001": "Tiktok ID Female",
+            "tk-jp_001": "Tiktok JP Female 1",
+            "tk-jp_003": "Tiktok JP Female 2",
+            "tk-jp_005": "Tiktok JP Female 3",
+            "tk-jp_006": "Tiktok JP Male",
+            "tk-kr_002": "Tiktok KR Male 1",
+            "tk-kr_004": "Tiktok KR Male 2",
+            "tk-kr_003": "Tiktok KR Female"
+		}
+	},
+    "volume": {
+		"group": "Configuración (TTS)",
+		"type": "slider",
+		"label": "Volumen",
+		"value": 100,
+		"min": 0,
+		"max": 100,
+		"step": 1
+	},
+	"boolStatus": {
+		"group": "Configuración (OBS)",
+		"type": "checkbox",
+		"label": "Mostrar mensaje (en pantalla)",
+		"value": true
+	  },
+	"bgColor": {
+        "label": "Color del fondo:",
+        "type": "colorpicker",
+        "value": "rgb(0, 0, 0, 0.5)",
+        "group": "Configuración (OBS)"
+    },
+    "fontSize": {
+      	"type": "number",
+      	"label": "Tamaño:",
+      	"value": 22,
+        "group": "Configuración (OBS)"
+    },
+    "fontWeight": {
+      "label": "Grosor:",
+      "type": "dropdown",
+      "value": "700",
+      "options": {
+      	"100": "Ultrafina (100)",
+      	"300": "Fina (300)",
+      	"400": "Normal (400)",
+      	"500": "Seminegrita (500)",
+      	"700": "Negrita (700)",
+      	"900": "Extra Negrita (900)"
+      },
+      "group": "Configuración (OBS)"
+  },
+  "fontColor": {
+    "type": "colorpicker",
+    "label": "Color:",
+    "value": "rgba(255,255,255,1)",
+    "group": "Configuración (OBS)"
+  },
+  "textShadow": {
+    "type": "text",
+    "label": "Sombra:",
+    "value": "rgb(0, 0, 0) 1px 1px 1px",
+    "group": "Configuración (OBS)"
+  },
+  "fontName": {
+    "label": "Fuente:",
+    "type": "googleFont",
+    "value": "Dosis",
+    "group": "Configuración (OBS)"
+  },
+  "inT": {
+    "type": "dropdown",
+    "label": "Animación inicial:",
+    "value": "SlideRight",
+    "group": "Configuración (OBS)",
+    "options": {
+      "SlideUp": "Deslizamiento hacia arriba",
+      "SlideDown": "Deslizamiento hacia abajo",
+      "SlideLeft": "Deslizamiento hacia la izquierda",
+      "SlideRight": "Deslizamiento hacia la derecha",
+      "Fade": "Desvanecimiento",
+      "Bounce": "Rebote"
+    }
+  },
+  "outT": {
+    "type": "dropdown",
+    "label": "Animación final:",
+    "value": "SlideUp",
+    "group": "Configuración (OBS)",
+    "options": {
+      "SlideUp": "Deslizamiento hacia arriba",
+      "SlideDown": "Deslizamiento hacia abajo",
+      "SlideLeft": "Deslizamiento hacia la izquierda",
+      "SlideRight": "Deslizamiento hacia la derecha",
+      "Fade": "Desvanecimiento",
+      "Bounce": "Rebote"
+    }
+  },
+  "test-tts-msg": {
+    "type": "string",
+    "label": "Texto de prueba:",
+    "value": "Esto es una prueba.",
+    "group": "Prueba"
+  }, 
+  "test-tts": {
+	"type": "button",
+	"label": "Prueba",
+	"value": "Prueba",
+	"group": "Prueba"
+	}
+}
